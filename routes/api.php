@@ -15,8 +15,8 @@ use App\Http\Controllers\basicAPI;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("getposts",[basicAPI::class,'getposts']);
+Route::middleware('auth:api')->get("getposts",[basicAPI::class,'getposts']);
