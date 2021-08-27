@@ -23,6 +23,12 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
+Route::get('/dashboard/callback', function (Request $request) {
+    return view('callback', [
+        'clients' => $request
+    ]);
+})->middleware(['auth'])->name('dashboard.clients');
+
 
 Route::get('/dashboard/clients', function (Request $request) {
     return view('clients', [
