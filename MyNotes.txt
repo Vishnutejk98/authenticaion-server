@@ -1,0 +1,59 @@
+1. composer create-project laravel/laravel authentication-server
+2. composer require laravel/breeze --dev
+3. php artisan breeze:install
+4. npm install
+5. npm run dev
+6. php artisan migrate
+
+7. create a basic API 
+###########################################################################
+First API Development 
+-----------------------
+- Make a controller 
+- Make a route 
+- Write a small code 
+- Test API 
+
+Make project 
+-------------
+- composer create-project laravel/laravel API2
+
+
+Make controller 
+---------------
+- php artisan make:controller basicAPI
+
+
+
+First API Development with Database 
+-----------------------
+- Make a controller 
+- Make a model 
+- write code for API
+- Make a route 
+- Write a small code 
+- Test API 
+
+Make a model 
+-------------
+- php artisan make:model Post 
+
+
+Lets see Passport 
+-----------------
+Laravel Passport provides a full OAuth2 server implementation for your Laravel application in a matter of minutes.
+
+Install :
+1. composer require laravel/passport
+2. php artisan migrate 
+3. php artisan passport:install
+
+Make login controller
+php artisan make:controller Api\AuthController
+#############################################################################
+
+8. Install passport and follow the documentation steps
+
+
+
+def50200811f2bdd41e68da1d50c0dac987373be7d52819c833714e6abd1a4ef5ceab326a1ad75e5297e04ed9f2fb02ee6e0bd13dc92e11dfe13385256a351491b5e1ecea093f682ced192840d419143b4688194379ea2139ad27271ce2a04daa671e326d0f3c120850d60d02962c4cc2ecd0e2a0e20fe0464f3bf682b5a49757517dd8e3be697c4ed42810ddc931962119c506c20caa43c50401cee776237abae6d3346c0f2a33d82377f478483194c18554316abfcb9cebb61414a5ee6c8cbbc4dcbbedfb6a8662939b236ca61ef579aaa9c6343754e3418d21e0ebe4da2555631389c5f1e9400b4634bb196dd819963d0d936b4db41dbe517a604a425d349f04410c9509190d33e97d8dbaee7d2422b364b15ec8b2e3c05f43e71ead7da7a15ec217a4c6470f29522780ebd4a4b2f5e4970de803e2b7e3c34e2e7b3aec87c82446c76685d3c98faaa5f6b900c03dfac18da24b31d&state=asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
